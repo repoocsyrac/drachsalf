@@ -27,6 +27,7 @@ Based on a simplified version of the SM-2 algorithm:
   - "Medium": increases interval slightly
   - "Hard"/"Forgot": resets interval, may lower ease
 - Next review date is calculated accordingly
+- Will introduce more complex version of this algorithm later.
 
 ## Data Format
 
@@ -41,7 +42,9 @@ Decks are saved in JSON format:
       "nextReview": "2025-04-10T12:00:00",
       "ease": 2.5,
       "interval": 6,
-      "lastReviewed": "2025-04-06T14:00:00"
+      "repetition": 2,
+      "lastReviewed": "2025-04-06T14:00:00",
+      "reviewHistory": [5, 4, 3]
     }
   ]
 }
